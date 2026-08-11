@@ -1,0 +1,48 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "text_analysis"
+version = "0.0.1"
+description = "text_analysis"
+authors = [
+  { name = "diego_zuniga" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+dependencies = [
+    "jupyterlab==4.6.1",
+    "loguru",
+    "mkdocs",
+    "networkx>=3.6.1",
+    "nltk>=3.10.2",
+    "pandas==2.2.2",
+    "pip",
+    "python-dotenv",
+    "ruff",
+    "scikit-learn==1.6.1",
+    "seaborn>=0.13.2",
+    "tqdm",
+    "typer",
+    "wordcloud>=1.9.6",
+]
+requires-python = "==3.12.13"
+
+
+[tool.ruff]
+line-length = 99
+src = ["text_analysis"]
+include = ["pyproject.toml", "text_analysis/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["text_analysis"]
+force-sort-within-sections = true
+
