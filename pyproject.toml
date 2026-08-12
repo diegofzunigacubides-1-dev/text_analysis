@@ -16,6 +16,7 @@ classifiers = [
     
 ]
 dependencies = [
+    "gensim>=4.4.0",
     "jupyterlab==4.6.1",
     "loguru",
     "mkdocs",
@@ -24,6 +25,7 @@ dependencies = [
     "pandas==2.2.2",
     "pdfplumber>=0.11.10",
     "pip",
+    "pyldavis>=3.4.1",
     "python-dotenv",
     "ruff",
     "scikit-learn==1.6.1",
